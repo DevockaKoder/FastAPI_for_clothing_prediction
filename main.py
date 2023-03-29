@@ -31,3 +31,5 @@ async def home_predict(request: Request, file: UploadFile = File(...)):
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     return utils.get_result(image_file=file, is_api=True)
+
+# Предлагаю новую фичу, ого, круто)
